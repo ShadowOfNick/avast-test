@@ -1,0 +1,35 @@
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: $font-size-h1;
+    text-align: center;
+
+    @media (max-width: 600px) {
+      font-size: $font-size-h1-mobile;
+    }
+  }
+
+  &__caption {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: $font-size-paragraph;
+
+    @media (max-width: 600px) {
+      font-size: $font-size-paragraph-mobile;
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+  }
+}

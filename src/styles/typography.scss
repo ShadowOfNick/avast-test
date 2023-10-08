@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+$font-family-main: 'Open Sans', 'open-sans';
+
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$font-base: 1rem; // 16px
+
+$font-size-h1: 3.25 * $font-base; // 52px
+$font-size-h1-mobile: 2.5 * $font-base; // 40px
+$font-size-h2: 2.5 * $font-base; // 40px
+$font-size-h2-mobile: 2 * $font-base; // 32px
+$font-size-h3: 2 * $font-base; // 32px
+$font-size-h3-mobile: 1.75 * $font-base; // 28px
+$font-size-h4: 1.5 * $font-base; // 28px
+$font-size-h4-mobile: 1.25 * $font-base; // 24px
+$font-size-paragraph: $font-base; // 16px
+$font-size-paragraph-mobile: .875 * $font-base; // 14px
+$font-size-anti-track-price: 1.5 * $font-base; // 24px
+$font-size-anti-track-price-text: 1.125 * $font-base; // 18px

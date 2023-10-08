@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  margin-bottom: 2rem;
+  
+  &__link {
+    display: block;
+    text-decoration: none;
+
+    &__img {
+      display: block;
+      max-width: 120px;
+    }
+  }
+}

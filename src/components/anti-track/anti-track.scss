@@ -1,0 +1,100 @@
+.anti-track {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: $font-size-h2;
+    text-align: center;
+    
+    @media (max-width: 600px) {
+      font-size: $font-size-h2-mobile;
+    }
+  }
+  
+  &__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: $orange-secondary;
+    border: 1px solid $orange-border;
+    border-radius: 50px;
+    
+    &__left-part {
+      display: flex;
+      align-items: center;
+      margin: 1.5rem;
+
+      &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: $white;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+  
+        &__image {
+          width: 25px;
+        }
+      }
+
+      &__price {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 1rem;
+        font-size: $font-size-anti-track-price-text;
+  
+        strong {
+          font-size: $font-size-anti-track-price;
+        }
+      }
+    }
+
+    &__button {
+      margin: 1.5rem;
+      padding: 1rem 4rem;
+      background-color: $blue;
+      color: $white;
+      font-size: $font-size-anti-track-price-text;
+      font-weight: $font-weight-bold;
+      border: none;
+      border-radius: 50px;
+      text-transform: uppercase;
+      transition: transform .3s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 600px) {
+        margin: 0 1.5rem 1.5rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    max-width: 350px;
+    margin: 0;
+    color: $gray;
+    text-align: center;
+    font-size: $font-size-paragraph;
+
+    @media (max-width: 600px) {
+      font-size: $font-size-paragraph-mobile;
+    }
+  }
+}
